@@ -58,30 +58,30 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    class CalculateArea
+    /*class CalculateArea
     {
-        /* Main Method */
+        *//* Main Method *//*
         static void Main(string[] args)
         {
-            /* Declaration of Variables */
+            *//* Declaration of Variables *//*
             int radius,length,width;
 
-            /* Creating objects */
+            *//* Creating objects *//*
             ShapeAreaCalculator circle = new Circle();
             ShapeAreaCalculator square = new Square();
             ShapeAreaCalculator rectangle = new Rectangle();
 
-            /* Taking radius of circle as user input and displaying area of circle */
+            *//* Taking radius of circle as user input and displaying area of circle *//*
             Console.Write("Enter radius of circle : ");
             radius = Convert.ToInt32(Console.ReadLine());
             circle.Area(radius);
 
-            /* Taking length of square as user input and displaying area of square */
+            *//* Taking length of square as user input and displaying area of square *//*
             Console.Write("\nEnter Length of square : ");
             length = Convert.ToInt32(Console.ReadLine());
             square.Area(length);
 
-            /* Taking length and width of rectangle as user input and displaying area of rectangle */
+            *//* Taking length and width of rectangle as user input and displaying area of rectangle *//*
             Console.Write("\nEnter length and width of rectangle : ");
             var userInput = Console.ReadLine().Split(' ');
             length = int.Parse(userInput[0]);
@@ -90,5 +90,5 @@ namespace AdvancedAssignmentOne
 
             Console.ReadKey();
         }
-    }
+    }*/
 }

@@ -26,20 +26,20 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver class */
-    class TestProtectedInternalEncapsulation
+    /*class TestProtectedInternalEncapsulation
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             ProtectedInternalEncapsulation testprotectedInternal = new ProtectedInternalEncapsulation();
 
-            /* Calling field */
+            *//* Calling field *//*
             Console.WriteLine("Hello " + testprotectedInternal.company);
 
-            /* Calling method */
+            *//* Calling method *//*
             testprotectedInternal.Message("Abhishek Hansaliya");
             Console.ReadKey();
         }
-    }
+    }*/
 }

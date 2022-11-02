@@ -43,20 +43,20 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    class TestMultiLevelInheritance
+    /*class TestMultiLevelInheritance
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             CarColor vehicle = new CarColor();
 
-            /* Calling methods */
+            *//* Calling methods *//*
             vehicle.Ford();
             vehicle.Model();
             vehicle.Color();
 
             Console.ReadKey();
         }
-    }
+    }*/
 }

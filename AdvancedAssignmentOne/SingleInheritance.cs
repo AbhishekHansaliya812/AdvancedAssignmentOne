@@ -33,19 +33,19 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    class TestSingleInheritance
+    /*class TestSingleInheritance
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             Vehicle vehicle = new Vehicle();
 
-            /* Calling methods */
+            *//* Calling methods *//*
             vehicle.Ford();
             vehicle.Model();
 
             Console.ReadKey();
         }
-    }
+    }*/
 }

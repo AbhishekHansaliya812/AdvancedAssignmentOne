@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Constructor.cs" />
+    <Compile Include="Exception\System.IO.IOException.cs" />
     <Compile Include="HierarchicalInheritance.cs" />
     <Compile Include="InternalEncapsulation.cs" />
     <Compile Include="MultiLevelInheritance.cs" />

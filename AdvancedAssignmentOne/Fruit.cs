@@ -40,23 +40,23 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    public class PrintFruitDetails
+    /*public class PrintFruitDetails
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             IFruit fruit;
 
-            /* Calling interface method from Apple class */
+            *//* Calling interface method from Apple class *//*
             fruit = new Apple();
             fruit.Details();
 
-            /* Calling interface method from Banana class */
+            *//* Calling interface method from Banana class *//*
             fruit = new Banana();
             fruit.Details();
 
             Console.ReadKey();
         }
-    }
+    }*/
 }

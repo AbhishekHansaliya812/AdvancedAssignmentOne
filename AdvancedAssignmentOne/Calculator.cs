@@ -77,21 +77,21 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    class Calculation
+    /*class Calculation
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             Calculator calculator = new Calculator();
 
-            /* Calling interface methods */
+            *//* Calling interface methods *//*
             calculator.Addition(6, 2);
             calculator.Subtraction(7, 3);
             calculator.Multiplication(2, 3);
             calculator.Division(8, 4);
 
-            /* Displaying results */
+            *//* Displaying results *//*
             Console.WriteLine("Multiple Inheritance using Interfaces.");
             Console.WriteLine("Addition : " + calculator.resultOfAddition);
             Console.WriteLine("Subtraction : " + calculator.resultOfSubtraction);
@@ -99,6 +99,6 @@ namespace AdvancedAssignmentOne
             Console.WriteLine("Division : " + calculator.resultOfDivision);
             Console.ReadKey();
         }
-    }
+    }*/
     
 }

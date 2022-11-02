@@ -43,16 +43,16 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    class TestHierarchicalInheritance
+    /*class TestHierarchicalInheritance
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating objects */
+            *//* Creating objects *//*
             ModelOne modelOne = new ModelOne();
             ModelTwo modelTwo = new ModelTwo();
 
-            /* Calling methods */
+            *//* Calling methods *//*
             modelOne.Company();
             modelOne.ModelFirst();
 
@@ -61,5 +61,5 @@ namespace AdvancedAssignmentOne
 
             Console.ReadKey();
         }
-    }
+    }*/
 }

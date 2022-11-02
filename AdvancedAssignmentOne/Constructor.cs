@@ -33,16 +33,16 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    class TestConstructor
+    /*class TestConstructor
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* "_" is discard, its a placeholder for variables that are unused */
+            *//* "_" is discard, its a placeholder for variables that are unused *//*
             _ = new Constructor();
             _ = new Parameterized("Parameterized Constructor");
 
             Console.ReadKey();
         }
-    }
-    }
+    }*/
+}

@@ -26,20 +26,20 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver class */
-    class TestPublicEncapsulation
+    /*class TestPublicEncapsulation
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             PublicEncapsulation publicEncapsulation = new PublicEncapsulation();
 
-            /* Calling field */
+            *//* Calling field *//*
             Console.WriteLine("Hello " + publicEncapsulation.company);
 
-            /* Calling method */
+            *//* Calling method *//*
             publicEncapsulation.Message("Abhishek Hansaliya");
             Console.ReadKey();
         }
-    }
+    }*/
 }

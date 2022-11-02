@@ -26,20 +26,20 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class / Derived Class */
-    class TestProtectedEncapsulation : ProtectedEncapsulation
+    /*class TestProtectedEncapsulation : ProtectedEncapsulation
     {
-        /* Main method */
+        *//* Main method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             TestProtectedEncapsulation testProtected = new TestProtectedEncapsulation();
 
-            /* Calling field */
+            *//* Calling field *//*
             Console.WriteLine("Hello " + testProtected.company);
 
-            /* Calling method */
+            *//* Calling method *//*
             testProtected.Message("Abhishek Hansaliya");
             Console.ReadKey();
         }
-    }
+    }*/
 }

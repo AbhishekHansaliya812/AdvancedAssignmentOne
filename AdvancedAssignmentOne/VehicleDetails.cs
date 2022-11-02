@@ -50,28 +50,28 @@ namespace AdvancedAssignmentOne
     }
 
     /* Driver Class */
-    public class PrintVehicleDetails 
+    /*public class PrintVehicleDetails 
     {
-        /* Main Method */
+        *//* Main Method *//*
         static void Main(string[] args)
         {
-            /* Creating object */
+            *//* Creating object *//*
             VehicleDetails details;
 
-            /* Calling abstract method of Company class */
+            *//* Calling abstract method of Company class *//*
             details = new Company();
             details.Details();
 
-            /* Calling abstract method of Model class */
+            *//* Calling abstract method of Model class *//*
             details = new Model();
             details.Details();
 
-            /* Calling abstract method of Color class */
+            *//* Calling abstract method of Color class *//*
             details = new Color();
             details.Details();
 
             Console.ReadKey();
         }
-    }
+    }*/
 
 }
