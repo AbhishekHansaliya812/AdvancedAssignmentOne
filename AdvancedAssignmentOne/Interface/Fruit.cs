@@ -25,7 +25,14 @@ namespace AdvancedAssignmentOne
         /* Implimentation of interface method */
         public void Details()
         {
-            Console.WriteLine("Fruit : Apple\tColor : Red");
+            try
+            {
+                Console.WriteLine("Fruit : Apple\tColor : Red");
+            }
+            catch (System.Exception exceptionOne)
+            {
+                Console.WriteLine(exceptionOne.Message);
+            }
         }
     }
 
@@ -35,28 +42,14 @@ namespace AdvancedAssignmentOne
         /* Derived Class */
         public void Details()
         {
-            Console.WriteLine("Fruit : Banana\tColor : Yellow");
+            try
+            {
+                Console.WriteLine("Fruit : Banana\tColor : Yellow");
+            }
+            catch (System.Exception exceptionTwo)
+            {
+                Console.WriteLine(exceptionTwo.Message);
+            }
         }
     }
-
-    /* Driver Class */
-    /*public class PrintFruitDetails
-    {
-        *//* Main method *//*
-        static void Main(string[] args)
-        {
-            *//* Creating object *//*
-            IFruit fruit;
-
-            *//* Calling interface method from Apple class *//*
-            fruit = new Apple();
-            fruit.Details();
-
-            *//* Calling interface method from Banana class *//*
-            fruit = new Banana();
-            fruit.Details();
-
-            Console.ReadKey();
-        }
-    }*/
 }

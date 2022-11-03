@@ -1,13 +1,25 @@
-﻿using System;
+﻿using AdvancedAssignmentOne.Exception;
+using AdvancedAssignmentOne.Multithreading;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using ArrayTypeMismatchException = AdvancedAssignmentOne.Exception.ArrayTypeMismatchException;
+using DivideByZeroException = AdvancedAssignmentOne.Exception.DivideByZeroException;
+using IndexOutOfRangeException = AdvancedAssignmentOne.Exception.IndexOutOfRangeException;
+using InvalidCastException = AdvancedAssignmentOne.Exception.InvalidCastException;
+using NullReferenceException = AdvancedAssignmentOne.Exception.NullReferenceException;
+using OutOfMemoryException = AdvancedAssignmentOne.Exception.OutOfMemoryException;
+using StackOverflowException = AdvancedAssignmentOne.Exception.StackOverflowException;
 
 namespace AdvancedAssignmentOne
 {
+    /* Driver Class */
     internal class Program : ProtectedEncapsulation
     {
+        /* Main Method */
         static void Main(string[] args) 
         {
             /* Assignment Question 1 */
@@ -219,6 +231,154 @@ namespace AdvancedAssignmentOne
             _ = new Constructor();
             _ = new Parameterized("Parameterized Constructor");
 
+
+            /* Exception Handling */
+
+            /* IO Exception */
+
+            Console.WriteLine("-------------------- IO Exception --------------------\n");
+            
+            /* Creating object */
+            IOException ioException = new IOException();
+
+            /* Calling method */
+            ioException.FileName("Advanced.txt");
+
+            /* IndexOutOfRange Exception */
+
+            Console.WriteLine("-------------------- IndexOutOfRange Exception --------------------\n");
+
+            /* Creating object */
+            IndexOutOfRangeException indexOutOfRange = new Exception.IndexOutOfRangeException();
+            
+            /* Calling method */
+            indexOutOfRange.PrintArray();
+
+            /* ArrayTypeMismatch Exception */
+
+            Console.WriteLine("-------------------- ArrayTypeMismatch Exception --------------------\n");
+
+            /* Creating object */
+            ArrayTypeMismatchException arrayTypeMismatch = new Exception.ArrayTypeMismatchException();
+
+            /* Calling method */
+            arrayTypeMismatch.ArrayTypeMismatch();
+
+            /* StackOverflow Exception */
+
+            /* OutOfMemory Exception */
+
+            Console.WriteLine("-------------------- OutOfMemory Exception --------------------\n");
+
+            /* Creating object */
+            OutOfMemoryException outOfMemory = new OutOfMemoryException();
+
+            /* Calling method */
+            outOfMemory.OutOfmemory();
+
+            Console.WriteLine("-------------------- StackOverflow Exception --------------------\n");
+
+            /* Creating object */
+            StackOverflowException stackOverflow = new StackOverflowException();
+
+            /* try block - Calling method */
+            try
+            {
+                stackOverflow.StackOverFlow(0);
+            }
+            /* catch block - print exception message */
+            catch (StackOverflowException stackOverflowException)
+            {
+                Console.WriteLine(stackOverflowException.Message);
+            }
+            /* finally block */
+            finally
+            {
+                Console.WriteLine("This is Finally Block");
+            }
+
+            /* NullReference Exception */
+
+            Console.WriteLine("-------------------- NullReference Exception --------------------\n");
+
+            /* Creating object */
+            NullReferenceException nullReference = new NullReferenceException();
+
+            /* Calling method */
+            nullReference.NullReference();
+
+            /* DivideByZero Exception */
+
+            Console.WriteLine("-------------------- DivideByZero Exception --------------------\n");
+
+            /* Creating object */
+            DivideByZeroException divideByZero = new DivideByZeroException();
+
+            /* Calling method */
+            divideByZero.DivideByZero();
+
+            /* InvalidCast Exception */
+
+            Console.WriteLine("-------------------- InvalidCast Exception --------------------\n");
+
+            /* Creating object */
+            InvalidCastException invalidCast = new InvalidCastException();
+
+            /* Calling method */
+            invalidCast.InvalidCast();
+
+            /* Multithreading */
+
+            Console.WriteLine("-------------------- Multithreading --------------------\n");
+
+            /* Main Thread */
+            Console.WriteLine("This is Main Thread");
+
+            /* Creating Threading object */
+            Thread threadOne = new Thread(Threading.MethodOne)
+            {
+                /* Name of thread */
+                Name = "Thread One"
+            };
+
+            /* Creating Threading object */
+            Thread threadTwo = new Thread(Threading.MethodTwo)
+            {
+                /* Name of thread */
+                Name = "Thread Two"
+            };
+
+            /* Creating Threading object */
+            Thread threadThree = new Thread(Threading.MethodThree)
+            {
+                /* Name of thread */
+                Name = "Thread Three" 
+            };
+
+            /* Thread One in running state */
+            threadOne.Start();
+            Console.WriteLine("ThreadState: {0}",threadOne.ThreadState);
+
+            /* Thread One in suspended state */
+            threadOne.Suspend();
+            Console.WriteLine("ThreadState: {0}", threadOne.ThreadState);
+            /* Thread One in running state */
+            threadOne.Resume();
+
+            /* Thread Two in running state */
+            threadTwo.Start();
+
+            /* Join Thread */
+            threadTwo.Join();
+            /* Thread Three in running state */
+            threadThree.Start();
+
+            /* Aborting threads */
+            threadOne.Abort();
+            threadTwo.Abort();
+            threadThree.Abort();
+
+            Console.ReadKey();
         }
     }
 }

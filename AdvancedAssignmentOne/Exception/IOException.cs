@@ -7,21 +7,28 @@ using System.Threading.Tasks;
 
 namespace AdvancedAssignmentOne.Exception
 {
-    public class SystemIOException
+    /* Class for IO Exception */
+    public class IOException
     {
-        string fileName = "Advanced.txt";
-
-        public void FileName()
+        /* Method to read file */
+        public void FileName(string fileName)
         {
+            /* try block - print texts from file */
             try
             {
                 string content = File.ReadAllText(fileName);
                 Console.WriteLine(content);
             }
+            /* catch block - print exception message */
             catch (FileNotFoundException fileNotFound)
             {
                 Console.WriteLine("failed to read file");
                 Console.WriteLine(fileNotFound.Message);
+            }
+            /* finally block */
+            finally
+            {
+                Console.WriteLine("This is Finally Block");
             }
         }
     }

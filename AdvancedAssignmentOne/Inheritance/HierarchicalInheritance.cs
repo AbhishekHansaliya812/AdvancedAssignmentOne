@@ -18,7 +18,14 @@ namespace AdvancedAssignmentOne
         /* Method of Base Class */
         public void Company()
         {
-            Console.WriteLine("Company : Ford");
+            try
+            {
+                Console.WriteLine("Company : Ford");
+            }
+            catch (System.Exception exceptionOne)
+            {
+                Console.WriteLine(exceptionOne.Message);
+            }
         }
     }
 
@@ -28,7 +35,14 @@ namespace AdvancedAssignmentOne
         /* Method of Derived Class */
         public void ModelFirst()
         {
-            Console.WriteLine("Model : Mustang");
+            try
+            {
+                Console.WriteLine("Model : Mustang");
+            }
+            catch (System.Exception exceptionTwo)
+            {
+                Console.WriteLine(exceptionTwo.Message);
+            }
         }
     }
 
@@ -38,28 +52,15 @@ namespace AdvancedAssignmentOne
         /* Method of Derived Class */
         public void ModelSecond()
         {
-            Console.WriteLine("Model : Endeavour");
+            try
+            {
+                Console.WriteLine("Model : Endeavour");
+            }
+            catch (System.Exception exceptionThree)
+            {
+                Console.WriteLine(exceptionThree.Message);
+            }
+            
         }
     }
-
-    /* Driver Class */
-    /*class TestHierarchicalInheritance
-    {
-        *//* Main method *//*
-        static void Main(string[] args)
-        {
-            *//* Creating objects *//*
-            ModelOne modelOne = new ModelOne();
-            ModelTwo modelTwo = new ModelTwo();
-
-            *//* Calling methods *//*
-            modelOne.Company();
-            modelOne.ModelFirst();
-
-            modelTwo.Company();
-            modelTwo.ModelSecond();
-
-            Console.ReadKey();
-        }
-    }*/
 }

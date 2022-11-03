@@ -75,30 +75,4 @@ namespace AdvancedAssignmentOne
             return resultOfDivision = firstValue / secondValue;
         }
     }
-
-    /* Driver Class */
-    /*class Calculation
-    {
-        *//* Main method *//*
-        static void Main(string[] args)
-        {
-            *//* Creating object *//*
-            Calculator calculator = new Calculator();
-
-            *//* Calling interface methods *//*
-            calculator.Addition(6, 2);
-            calculator.Subtraction(7, 3);
-            calculator.Multiplication(2, 3);
-            calculator.Division(8, 4);
-
-            *//* Displaying results *//*
-            Console.WriteLine("Multiple Inheritance using Interfaces.");
-            Console.WriteLine("Addition : " + calculator.resultOfAddition);
-            Console.WriteLine("Subtraction : " + calculator.resultOfSubtraction);
-            Console.WriteLine("Multiplication : " + calculator.resultOfMultiplication);
-            Console.WriteLine("Division : " + calculator.resultOfDivision);
-            Console.ReadKey();
-        }
-    }*/
-    
 }

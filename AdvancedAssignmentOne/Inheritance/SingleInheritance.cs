@@ -18,7 +18,14 @@ namespace AdvancedAssignmentOne
         /* Method of base class */
         public void Ford()
         {
-            Console.WriteLine("Company : Ford");
+            try
+            {
+                Console.WriteLine("Company : Ford");
+            }
+            catch (System.Exception exceptionOne)
+            {
+                Console.WriteLine(exceptionOne.Message);
+            }
         }
     }
 
@@ -28,24 +35,14 @@ namespace AdvancedAssignmentOne
         /* Method of derived class */
         public void Model()
         {
-            Console.WriteLine("Model : Mustang");
+            try
+            {
+                Console.WriteLine("Model : Mustang");
+            }
+            catch (System.Exception exceptionTwo)
+            {
+                Console.WriteLine(exceptionTwo.Message);
+            }
         }
     }
-
-    /* Driver Class */
-    /*class TestSingleInheritance
-    {
-        *//* Main method *//*
-        static void Main(string[] args)
-        {
-            *//* Creating object *//*
-            Vehicle vehicle = new Vehicle();
-
-            *//* Calling methods *//*
-            vehicle.Ford();
-            vehicle.Model();
-
-            Console.ReadKey();
-        }
-    }*/
 }

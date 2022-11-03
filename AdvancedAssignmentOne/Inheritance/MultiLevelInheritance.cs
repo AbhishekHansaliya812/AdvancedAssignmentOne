@@ -18,7 +18,14 @@ namespace AdvancedAssignmentOne
         /* Method of base class */
         public void Ford()
         {
-            Console.WriteLine("Company : Ford");
+            try
+            {
+                Console.WriteLine("Company : Ford");
+            }
+            catch (System.Exception exceptionOne)
+            {
+                Console.WriteLine(exceptionOne.Message);
+            }
         }
     }
 
@@ -28,7 +35,14 @@ namespace AdvancedAssignmentOne
         /* Method */
         public void Model()
         {
-            Console.WriteLine("Model : Mustang");
+            try
+            {
+                Console.WriteLine("Model : Mustang");
+            }
+            catch(System.Exception exceptionTwo)
+            {
+                Console.WriteLine(exceptionTwo.Message);
+            }
         }
     }
 
@@ -38,25 +52,14 @@ namespace AdvancedAssignmentOne
         /* Method of Derived class */
         public void Color()
         {
-            Console.WriteLine("Colror : Black");
+            try
+            {
+                Console.WriteLine("Colror : Black");
+            }
+            catch (System.Exception exceptionThree)
+            {
+                Console.WriteLine(exceptionThree.Message);
+            }
         }
     }
-
-    /* Driver Class */
-    /*class TestMultiLevelInheritance
-    {
-        *//* Main method *//*
-        static void Main(string[] args)
-        {
-            *//* Creating object *//*
-            CarColor vehicle = new CarColor();
-
-            *//* Calling methods *//*
-            vehicle.Ford();
-            vehicle.Model();
-            vehicle.Color();
-
-            Console.ReadKey();
-        }
-    }*/
 }

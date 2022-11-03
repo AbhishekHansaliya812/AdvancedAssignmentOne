@@ -25,7 +25,14 @@ namespace AdvancedAssignmentOne
         /* implimentation of abstract method */
         public override void Details()
         {
-            Console.WriteLine("Company : Ford");
+            try
+            {
+                Console.WriteLine("Company : Ford");
+            }
+            catch(System.Exception exceptionOne)
+            {
+                Console.WriteLine(exceptionOne.Message);
+            }
         }
     }
 
@@ -35,7 +42,15 @@ namespace AdvancedAssignmentOne
         /* implimentation of abstract method */
         public override void Details()
         {
-            Console.WriteLine("Model : Mustang");
+            try
+            {
+                Console.WriteLine("Model : Mustang");
+            }
+            catch (System.Exception exceptionTwo)
+            {
+                Console.WriteLine(exceptionTwo.Message);
+            }
+            
         }
     }
 
@@ -45,33 +60,14 @@ namespace AdvancedAssignmentOne
         /* implimentation of abstract method */
         public override void Details()
         {
-            Console.WriteLine("Color : Black");
+            try
+            {
+                Console.WriteLine("Color : Black");
+            }
+            catch(System.Exception exceptionThree)
+            {
+                Console.WriteLine(exceptionThree.Message);
+            }
         }
     }
-
-    /* Driver Class */
-    /*public class PrintVehicleDetails 
-    {
-        *//* Main Method *//*
-        static void Main(string[] args)
-        {
-            *//* Creating object *//*
-            VehicleDetails details;
-
-            *//* Calling abstract method of Company class *//*
-            details = new Company();
-            details.Details();
-
-            *//* Calling abstract method of Model class *//*
-            details = new Model();
-            details.Details();
-
-            *//* Calling abstract method of Color class *//*
-            details = new Color();
-            details.Details();
-
-            Console.ReadKey();
-        }
-    }*/
-
 }

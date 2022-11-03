@@ -18,7 +18,14 @@ namespace AdvancedAssignmentOne
         /* Default Constructor */
         public Constructor()
         {
-            Console.WriteLine("This is Default Constructor");
+            try
+            {
+                Console.WriteLine("This is Default Constructor");
+            }
+            catch(System.Exception exceptionOne)
+            {
+                Console.WriteLine(exceptionOne.Message);
+            }  
         } 
     }
 
@@ -28,21 +35,14 @@ namespace AdvancedAssignmentOne
         /* Parameterized Constructor */
         public Parameterized(string typeOfConstructor)
         {
-            Console.WriteLine("This is " + typeOfConstructor);
+            try
+            {
+                Console.WriteLine("This is " + typeOfConstructor);
+            }
+            catch(System.Exception exceptionTwo)
+            {
+                Console.WriteLine(exceptionTwo.Message);
+            }
         }
     }
-
-    /* Driver Class */
-    /*class TestConstructor
-    {
-        *//* Main method *//*
-        static void Main(string[] args)
-        {
-            *//* "_" is discard, its a placeholder for variables that are unused *//*
-            _ = new Constructor();
-            _ = new Parameterized("Parameterized Constructor");
-
-            Console.ReadKey();
-        }
-    }*/
 }

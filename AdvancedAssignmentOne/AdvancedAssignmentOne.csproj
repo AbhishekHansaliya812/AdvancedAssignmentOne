@@ -43,26 +43,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
+    <Compile Include="Inheritance\Calculator.cs" />
+    <Compile Include="Exception\ArrayTypeMismatchException.cs" />
+    <Compile Include="Exception\DivideByZeroException.cs" />
+    <Compile Include="Exception\IndexOutOfRangeException.cs" />
+    <Compile Include="Exception\InvalidCastException.cs" />
+    <Compile Include="Exception\NullReferenceException.cs" />
+    <Compile Include="Exception\OutOfMemoryException.cs" />
+    <Compile Include="Exception\StackOverflowException.cs" />
+    <Compile Include="Multithreading\Threading.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Constructor.cs" />
-    <Compile Include="Exception\System.IO.IOException.cs" />
-    <Compile Include="HierarchicalInheritance.cs" />
-    <Compile Include="InternalEncapsulation.cs" />
-    <Compile Include="MultiLevelInheritance.cs" />
-    <Compile Include="PrivateEncapsulation.cs" />
-    <Compile Include="ProtectedEncapsulation.cs" />
-    <Compile Include="ProtectedInternalEncapsulation.cs" />
-    <Compile Include="PublicEncapsulation.cs" />
-    <Compile Include="Fruit.cs" />
+    <Compile Include="Constructor\Constructor.cs" />
+    <Compile Include="Exception\IOException.cs" />
+    <Compile Include="Inheritance\HierarchicalInheritance.cs" />
+    <Compile Include="Encapsulation\InternalEncapsulation.cs" />
+    <Compile Include="Inheritance\MultiLevelInheritance.cs" />
+    <Compile Include="Encapsulation\PrivateEncapsulation.cs" />
+    <Compile Include="Encapsulation\ProtectedEncapsulation.cs" />
+    <Compile Include="Encapsulation\ProtectedInternalEncapsulation.cs" />
+    <Compile Include="Encapsulation\PublicEncapsulation.cs" />
+    <Compile Include="Interface\Fruit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShapeAreaCalculator.cs" />
-    <Compile Include="SingleInheritance.cs" />
-    <Compile Include="UserInformation.cs" />
-    <Compile Include="VehicleDetails.cs" />
+    <Compile Include="Polymorphism\ShapeAreaCalculator.cs" />
+    <Compile Include="Inheritance\SingleInheritance.cs" />
+    <Compile Include="Polymorphism\UserInformation.cs" />
+    <Compile Include="Abstraction\VehicleDetails.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
